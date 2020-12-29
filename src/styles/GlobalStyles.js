@@ -1,15 +1,25 @@
 import { createGlobalStyle } from "styled-components";
 
+import "./typography.css";
+
 const GlobalStyles = createGlobalStyle`
     :root {
         --base-size: 16px;
         --black: #212F3D;
         --white: #fff;
+        --mobile: 425px;
+        --tabletPortrait: 768px;
+        --tabletLandscape: 1024px;
+        --desktop: 1200px;
+        --desktopL: 1440px;
+        --desktopXL: 1600px;
+        --desktopXXL: 1920px;
     }
 
     html {
         font-size: var(--base-size);
         box-sizing: border-box;
+        font-family: 'Montserrat', sans-serif;
     }
 
     body {

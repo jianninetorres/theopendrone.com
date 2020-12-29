@@ -2,6 +2,8 @@ import React, { useState, useEffect, useRef } from "react";
 import { Link } from "gatsby";
 
 import styled from "styled-components";
+import logo from "../../images/icon.svg";
+import menu from "../../images/menu.svg";
 
 const NavStyles = styled.nav`
   background-color: var(--white);
@@ -13,15 +15,13 @@ const NavStyles = styled.nav`
     background-color: ${(props) => props.bgColor};
     transition: background-color 0.2s ease;
     border-bottom: 1px solid ${(props) => props.navBottomBorder};
-    padding-left: calc(var(--base-size) * 4);
-    padding-right: calc(var(--base-size) * 4);
   }
 
   .nav-wrapper {
     width: 100%;
     @media screen and (min-width: 1024px) {
       display: flex;
-      max-width: 1100px;
+      max-width: var(--desktopXXL);
       margin: 0 auto;
     }
   }
@@ -41,13 +41,13 @@ const NavStyles = styled.nav`
     @media screen and (min-width: 1024px) {
       display: flex;
       justify-content: space-between;
-      flex: 1 1 auto;
     }
   }
 
   .list-container--visible {
     display: flex;
     flex-direction: column;
+    padding: var(--base-size) 0;
   }
 
   .list-container__item {
@@ -56,7 +56,6 @@ const NavStyles = styled.nav`
     justify-content: center;
     margin: 16px 0;
     > a {
-      font-weight: 600;
       &:hover {
       }
     }
@@ -103,15 +102,17 @@ const NavStyles = styled.nav`
   }
 
   .logo {
+    background: url(${logo}) no-repeat center center;
     width: 100%;
-    max-width: 140px;
-    height: 50px;
+    max-width: 48px;
+    height: 48px;
     padding: 16px 0;
     flex-basis: 300px;
     flex: 1 1 auto;
   }
 
   .menu-burger {
+    background: url(${menu}) no-repeat center center;
     width: 100%;
     max-width: 50px;
     height: 50px;
@@ -225,7 +226,7 @@ const Nav = () => {
               activeStyle={{ color: `var(--hot-pink)` }}
               onClick={onClickNav}
             >
-              Forum
+              forum
             </Link>
           </li>
           <li className="list-container__item">
@@ -234,7 +235,7 @@ const Nav = () => {
               activeStyle={{ color: `var(--hot-pink)` }}
               onClick={onClickNav}
             >
-              Contact
+              contact
             </Link>
           </li>
         </ul>

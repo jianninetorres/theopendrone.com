@@ -11,7 +11,7 @@ const MainContentStyles = styled.div`
   position: relative;
   min-height: 100vh;
   @media screen and (min-width: 1024px) {
-    padding: 0;
+    padding: 0 calc(var(--base-size) * 2);
   }
 `;
 

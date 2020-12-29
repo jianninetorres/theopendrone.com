@@ -2,9 +2,12 @@ import React from "react";
 import styled from "styled-components";
 
 const SectionStyles = styled.section`
-  margin: var(--base-size) 0;
+  padding: var(--base-size) 0;
+  width: 100%;
+  max-width: var(--desktopXXL);
+  margin: 0 auto;
   @media screen and (min-width: 1024px) {
-    margin: calc(var(--base-size) * 2) 0;
+    padding: calc(var(--base-size) * 2) 0;
   }
 `;
 
