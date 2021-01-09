@@ -110,6 +110,16 @@ const NavStyles = styled.nav`
     display: inline-flex;
     flex-direction: row;
     align-items: center;
+
+    p {
+      font-size: var(--base-size);
+      color: var(--black);
+      margin-left: calc(var(--base-size) * 1.5);
+
+      @media screen and (min-width: 1024px) {
+        font-size: calc(var(--base-size) * 2);
+      }
+    }
   }
 
   .logo {
@@ -211,7 +221,7 @@ const Nav = () => {
               aria-label="home"
               tabIndex={0}
             ></div>
-            The Open Drone
+            <p>The Open Drone</p>
           </Link>
           <div
             className="menu-burger"
