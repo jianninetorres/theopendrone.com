@@ -55,6 +55,7 @@ const NavStyles = styled.nav`
     flex-direction: column;
     justify-content: center;
     margin: 16px 0;
+    font-size: var(--base-size);
     > a {
       &:hover {
       }
@@ -62,6 +63,7 @@ const NavStyles = styled.nav`
 
     @media screen and (min-width: 1024px) {
       margin: 0;
+      font-size: calc(var(--base-size) * 2);
       &:not(last-child) {
         margin: 0 var(--base-size);
       }
