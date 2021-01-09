@@ -19,7 +19,6 @@ const Index = () => {
   return (
     <IndexStyles>
       <VideoContainer>
-        <div>Video</div>
         <HeaderH1>An open-source drone framework</HeaderH1>
         <Button type="button" content="Join the initiative" />
       </VideoContainer>
