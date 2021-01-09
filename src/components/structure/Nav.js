@@ -57,7 +57,10 @@ const NavStyles = styled.nav`
     margin: 16px 0;
     font-size: var(--base-size);
     > a {
+      color: var(--black);
       &:hover {
+        color: var(--blue);
+        text-decoration: overline;
       }
     }
 
