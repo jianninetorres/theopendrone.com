@@ -19,7 +19,7 @@ const VideoContainerStyles = styled.div`
 
   @media screen and (min-width: 1200px) {
     min-height: 700px;
-    padding: calc(var(--base-size) * 4);
+    padding: calc(var(--base-size) * 6) calc(var(--base-size) * 4);
   }
 
   @media screen and (min-width: 1920px) {

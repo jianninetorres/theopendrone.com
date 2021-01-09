@@ -12,7 +12,7 @@ const SectionStyles = styled.section`
   }
 
   @media screen and (min-width: 1200px) {
-    padding: calc(var(--base-size) * 4) 0;
+    padding: calc(var(--base-size) * 6) 0;
   }
 `;
 
