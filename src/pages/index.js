@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import Section from "../components/structure/Section";
+import HeaderH1 from "../components/structure/HeaderH1";
+import VideoContainer from "../components/structure/VideoContainer";
 
 const IndexStyles = styled.div`
   padding: var(--base-size) 0;
@@ -12,9 +13,10 @@ const IndexStyles = styled.div`
 const Index = () => {
   return (
     <IndexStyles>
-      <Section>
-        <h1>The Open Drone</h1>
-      </Section>
+      <VideoContainer>
+        <div>Video</div>
+      </VideoContainer>
+      <HeaderH1>An open-source drone framework</HeaderH1>
     </IndexStyles>
   );
 };

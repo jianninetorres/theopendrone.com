@@ -7,11 +7,11 @@ import GlobalStyles from "../../styles/GlobalStyles";
 import Nav from "./Nav";
 
 const MainContentStyles = styled.div`
-  padding: calc(var(--base-size) * 5) var(--base-size) 0;
+  padding: calc(var(--base-size) * 5) 0 0;
   position: relative;
   min-height: 100vh;
   @media screen and (min-width: 1024px) {
-    padding: 0 calc(var(--base-size) * 2);
+    padding: 0;
   }
 `;
 
