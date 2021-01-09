@@ -6,6 +6,7 @@ const GlobalStyles = createGlobalStyle`
     :root {
         --base-size: 16px;
         --black: #212F3D;
+        --blue: #2F80ED;
         --white: #fff;
         --mobile: 425px;
         --tabletPortrait: 768px;
@@ -14,6 +15,7 @@ const GlobalStyles = createGlobalStyle`
         --desktopL: 1440px;
         --desktopXL: 1600px;
         --desktopXXL: 1920px;
+        --border-radius: calc(var(--base-size) - 10px);
     }
 
     html {
