@@ -9,6 +9,11 @@ const ButtonStyles = styled.button`
   color: ${(props) => props.textColor || `var(--white)`};
   width: ${(props) => props.width || ""};
   height: ${(props) => props.height || ""};
+
+  @media screen and (min-width: 1200px) {
+    width: ${(props) => props.widthL || ""};
+    height: ${(props) => props.heightL || ""};
+  }
 `;
 
 const Button = ({
@@ -19,7 +24,9 @@ const Button = ({
   type,
   textColor,
   width,
+  widthL,
   height,
+  heightL,
 }) => {
   return (
     <ButtonStyles
@@ -29,6 +36,8 @@ const Button = ({
       textColor={textColor}
       width={width}
       height={height}
+      widthL={widthL}
+      heightL={heightL}
     >
       {children ? children : content}
     </ButtonStyles>
