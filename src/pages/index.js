@@ -6,7 +6,7 @@ import VideoContainer from "../components/structure/VideoContainer";
 import styled from "styled-components";
 
 const IndexStyles = styled.div`
-  padding: var(--base-size) 0;
+  padding: 0 0 var(--base-size);
   @media screen and (min-width: 1024px) {
     padding: calc(var(--base-size) * 5) 0;
   }

@@ -106,6 +106,12 @@ const NavStyles = styled.nav`
     }
   }
 
+  .logo-container {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
   .logo {
     background: url(${logo}) no-repeat center center;
     width: 100%;
@@ -198,13 +204,14 @@ const Nav = () => {
     >
       <div className="nav-wrapper">
         <div className="links-container">
-          <Link to="/">
+          <Link to="/" className="logo-container">
             <div
               className="logo"
               role="button"
               aria-label="home"
               tabIndex={0}
             ></div>
+            The Open Drone
           </Link>
           <div
             className="menu-burger"
