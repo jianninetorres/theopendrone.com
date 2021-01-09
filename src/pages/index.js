@@ -1,8 +1,9 @@
 import React from "react";
 import Button from "../components/structure/Button";
-import styled from "styled-components";
 import HeaderH1 from "../components/structure/HeaderH1";
+import FullPanel from "../components/structure/FullPanel";
 import VideoContainer from "../components/structure/VideoContainer";
+import styled from "styled-components";
 
 const IndexStyles = styled.div`
   padding: var(--base-size) 0;
@@ -22,6 +23,11 @@ const Index = () => {
         <HeaderH1>An open-source drone framework</HeaderH1>
         <Button type="button" content="Join the initiative" />
       </VideoContainer>
+      <FullPanel h2Title="Open Drone">
+        is an open-source framework to provide makers around the world with the
+        resources to create their own delivery drones to safely provide
+        essential supplies to those in need.
+      </FullPanel>
     </IndexStyles>
   );
 };
