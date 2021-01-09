@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const SectionStyles = styled.section`
-  padding: var(--base-size) var(--base-size);
+  padding: calc(var(--base-size) * 2) var(--base-size);
   width: 100%;
   max-width: var(--desktopXXL);
   margin: 0 auto;

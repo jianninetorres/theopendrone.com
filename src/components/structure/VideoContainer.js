@@ -11,7 +11,7 @@ const VideoContainerStyles = styled.div`
   // temporary
   border: 1px solid black;
   min-height: 500px;
-  padding: var(--base-size);
+  padding: calc(var(--base-size) * 2) var(--base-size);
   //
   @media screen and (min-width: 1024px) {
     padding: calc(var(--base-size) * 2);
