@@ -8,6 +8,10 @@ const IndexStyles = styled.div`
   @media screen and (min-width: 1024px) {
     padding: calc(var(--base-size) * 6) 0;
   }
+
+  h1 {
+    text-align: center;
+  }
 `;
 
 const Index = () => {
@@ -15,8 +19,8 @@ const Index = () => {
     <IndexStyles>
       <VideoContainer>
         <div>Video</div>
+        <HeaderH1>An open-source drone framework</HeaderH1>
       </VideoContainer>
-      <HeaderH1>An open-source drone framework</HeaderH1>
     </IndexStyles>
   );
 };
