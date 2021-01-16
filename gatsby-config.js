@@ -24,6 +24,13 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [`roboto mono`, `montserrat\:400,600`],
+        display: "swap",
+      },
+    },
+    {
       resolve: "gatsby-plugin-manifest",
       options: {
         icon: "src/assets/images/favicon.png",

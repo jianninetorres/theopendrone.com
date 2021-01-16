@@ -1,7 +1,5 @@
 import { createGlobalStyle } from "styled-components";
 
-import "./typography.css";
-
 const GlobalStyles = createGlobalStyle`
     :root {
         --base-size: 16px;
