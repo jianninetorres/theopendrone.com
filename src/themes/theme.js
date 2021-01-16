@@ -20,4 +20,7 @@ export default {
   spacings: {
     base: "16px",
   },
+  borderStyles: {
+    radius: "calc(var(--base-size) - 10px)",
+  },
 };
