@@ -2,24 +2,17 @@ import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
     :root {
-        --base-size: 16px;
-        --black: #212F3D;
-        --blue: #2F80ED;
-        --white: #fff;
-        --mobile: 425px;
-        --tabletPortrait: 768px;
-        --tabletLandscape: 1024px;
-        --desktop: 1200px;
-        --desktopL: 1440px;
-        --desktopXL: 1600px;
-        --desktopXXL: 1920px;
-        --border-radius: calc(var(--base-size) - 10px);
+        --base-size: ${(props) => props.theme.spacings.base};
+        --black: ${(props) => props.theme.colors.black};
+        --blue: ${(props) => props.theme.colors.blue};
+        --white: ${(props) => props.theme.colors.white};
+        --border-radius: ${(props) => props.theme.borderStyles.radius};
     }
 
     html {
         font-size: var(--base-size);
         box-sizing: border-box;
-        font-family: 'Montserrat', sans-serif;
+        font-family: ${(props) => props.theme.fonts.main};
     }
 
     body {
@@ -38,7 +31,7 @@ const GlobalStyles = createGlobalStyle`
     h1 {
         font-size: calc(var(--base-size) * 2.5);
         margin: 0 0 calc(var(--base-size) * 2);
-        @media screen and (min-width: 768px) {
+        @media ${(props) => props.theme.breakpoints.tabletPortrait} {
             margin-top: calc(var(--base-size) * 2);
         }
     }
