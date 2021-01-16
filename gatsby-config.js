@@ -8,14 +8,27 @@ module.exports = {
     "gatsby-plugin-react-helmet",
     // "gatsby-plugin-sitemap",
     "gatsby-plugin-offline",
+    "gatsby-transformer-sharp",
+    {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        extensions: [`.md`, `.mdx`],
+        gatsbyRemarkPlugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 1200,
+            },
+          },
+        ],
+      },
+    },
     {
       resolve: "gatsby-plugin-manifest",
       options: {
         icon: "src/assets/images/favicon.png",
       },
     },
-    "gatsby-plugin-mdx",
-    "gatsby-transformer-sharp",
     {
       resolve: `gatsby-source-filesystem`,
       options: {
