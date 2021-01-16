@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const HalfPanelStyles = styled.section`
   display: grid;
-  @media screen and (min-width: 1024px) {
+  @media ${(props) => props.theme.breakpoints.tabletLandscape} {
     grid-template-columns: 50% 50%;
   }
 `;

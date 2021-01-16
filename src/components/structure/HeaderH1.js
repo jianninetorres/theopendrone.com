@@ -4,7 +4,7 @@ import styled from "styled-components";
 const HeaderH1Styles = styled.h1`
   font-size: 2.5rem;
   font-weight: 400;
-  @media screen and (min-width: 1024px) {
+  @media ${(props) => props.theme.breakpoints.tabletLandscape} {
     font-size: 3.5rem;
   }
 `;

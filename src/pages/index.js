@@ -7,7 +7,7 @@ import styled from "styled-components";
 
 const IndexStyles = styled.div`
   padding: 0 0 var(--base-size);
-  @media screen and (min-width: 1024px) {
+  @media ${(props) => props.theme.breakpoints.tabletLandscape} {
     padding: calc(var(--base-size) * 5) 0;
   }
 

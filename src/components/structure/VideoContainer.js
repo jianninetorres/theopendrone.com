@@ -13,16 +13,16 @@ const VideoContainerStyles = styled.div`
   min-height: 500px;
   padding: calc(var(--base-size) * 2) var(--base-size);
   //
-  @media screen and (min-width: 1024px) {
+  @media ${(props) => props.theme.breakpoints.tabletLandscape} {
     padding: calc(var(--base-size) * 2);
   }
 
-  @media screen and (min-width: 1200px) {
+  @media ${(props) => props.theme.breakpoints.desktop} {
     min-height: 700px;
     padding: calc(var(--base-size) * 6) calc(var(--base-size) * 4);
   }
 
-  @media screen and (min-width: 1920px) {
+  @media ${(props) => props.theme.breakpoints.desktopXXL} {
     max-width: var(--desktop);
     margin: 0 auto;
   }

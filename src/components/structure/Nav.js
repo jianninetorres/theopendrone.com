@@ -11,7 +11,7 @@ const NavStyles = styled.nav`
   position: fixed;
   width: 100%;
   z-index: 100;
-  @media screen and (min-width: 1024px) {
+  @media ${(props) => props.theme.breakpoints.tabletLandscape} {
     background-color: ${(props) => props.bgColor};
     transition: background-color 0.2s ease;
     border-bottom: 1px solid ${(props) => props.navBottomBorder};
@@ -19,7 +19,7 @@ const NavStyles = styled.nav`
 
   .nav-wrapper {
     width: 100%;
-    @media screen and (min-width: 1024px) {
+    @media ${(props) => props.theme.breakpoints.tabletLandscape} {
       display: flex;
       max-width: var(--desktopXXL);
       margin: 0 auto;
@@ -31,14 +31,14 @@ const NavStyles = styled.nav`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    @media screen and (min-width: 1024px) {
+    @media ${(props) => props.theme.breakpoints.tabletLandscape} {
       flex: 1 1 auto;
     }
   }
 
   .list-container {
     display: none;
-    @media screen and (min-width: 1024px) {
+    @media ${(props) => props.theme.breakpoints.tabletLandscape} {
       display: flex;
       justify-content: space-between;
     }
@@ -64,7 +64,7 @@ const NavStyles = styled.nav`
       }
     }
 
-    @media screen and (min-width: 1024px) {
+    @media ${(props) => props.theme.breakpoints.tabletLandscape} {
       margin: 0;
       font-size: calc(var(--base-size) * 2);
       &:not(last-child) {
@@ -73,14 +73,14 @@ const NavStyles = styled.nav`
     }
 
     &--home {
-      @media screen and (min-width: 1024px) {
+      @media ${(props) => props.theme.breakpoints.tabletLandscape} {
         display: none;
       }
     }
 
     &--button {
       display: none;
-      @media screen and (min-width: 1024px) {
+      @media ${(props) => props.theme.breakpoints.tabletLandscape} {
         display: flex;
         height: calc(var(--base-size) * 4);
         border-radius: calc(var(--base-size) * 2);
@@ -116,7 +116,7 @@ const NavStyles = styled.nav`
       color: var(--black);
       margin-left: calc(var(--base-size) * 1.5);
 
-      @media screen and (min-width: 1024px) {
+      @media ${(props) => props.theme.breakpoints.tabletLandscape} {
         font-size: calc(var(--base-size) * 2);
       }
     }
@@ -144,7 +144,7 @@ const NavStyles = styled.nav`
     &:focus {
     }
 
-    @media screen and (min-width: 1024px) {
+    @media ${(props) => props.theme.breakpoints.tabletLandscape} {
       display: none;
     }
   }

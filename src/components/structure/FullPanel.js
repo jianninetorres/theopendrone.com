@@ -18,7 +18,7 @@ const FullPanelStyles = styled.div`
     font-size: 1.5rem;
     text-align: center;
     line-height: 1.2;
-    @media screen and (min-width: 1024px) {
+    @media ${(props) => props.theme.breakpoints.tabletLandscape} {
       margin-top: calc(var(--base-size) * 2);
       font-size: 2rem;
     }

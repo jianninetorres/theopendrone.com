@@ -7,11 +7,11 @@ const SectionStyles = styled.section`
   max-width: var(--desktopXXL);
   margin: 0 auto;
 
-  @media screen and (min-width: 1024px) {
+  @media ${(props) => props.theme.breakpoints.tabletLandscape} {
     padding: calc(var(--base-size) * 2);
   }
 
-  @media screen and (min-width: 1200px) {
+  @media ${(props) => props.theme.breakpoints.desktop} {
     padding: calc(var(--base-size) * 6) 0;
   }
 `;

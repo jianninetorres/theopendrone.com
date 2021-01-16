@@ -10,7 +10,7 @@ const ButtonStyles = styled.button`
   width: ${(props) => props.width || ""};
   height: ${(props) => props.height || ""};
 
-  @media screen and (min-width: 1200px) {
+  @media ${(props) => props.theme.breakpoints.desktop} {
     width: ${(props) => props.widthL || ""};
     height: ${(props) => props.heightL || ""};
   }

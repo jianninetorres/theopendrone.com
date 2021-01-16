@@ -4,7 +4,7 @@ import styled from "styled-components";
 const H2TitleStyles = styled.h2`
   font-size: 2rem;
   text-align: ${(props) => props.textAlign || "left"};
-  @media screen and (min-width: 1024px) {
+  @media ${(props) => props.theme.breakpoints.tabletLandscape} {
     font-size: 3rem;
   }
 `;
