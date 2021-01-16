@@ -17,20 +17,25 @@ module.exports = {
     "gatsby-plugin-mdx",
     "gatsby-transformer-sharp",
     {
-      resolve: "gatsby-source-filesystem",
+      resolve: `gatsby-source-filesystem`,
       options: {
-        name: "images",
-        path: "./src/assets/images/",
+        name: `pages`,
+        path: `${__dirname}/src/pages`,
       },
-      __key: "images",
     },
     {
-      resolve: "gatsby-source-filesystem",
+      resolve: `gatsby-source-filesystem`,
       options: {
-        name: "pages",
-        path: "./src/pages/",
+        name: `posts`,
+        path: `${__dirname}/src/posts`,
       },
-      __key: "pages",
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/assets/images`,
+      },
     },
     {
       resolve: `gatsby-plugin-favicon`,
