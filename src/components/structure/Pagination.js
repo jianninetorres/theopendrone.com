@@ -17,28 +17,28 @@ const PaginationStyles = styled((props) => <Link {...props} />)`
   // Previous page
   &:nth-child(1) {
     color: ${(props) =>
-      props.isFirst ? props.theme.colors.dark3 : props.theme.colors.dark1};
-    pointer-events: ${(props) => (props.isFirst ? "none" : "auto")};
-    cursor: ${(props) => (props.isFirst ? "default" : "pointer")};
+      props.isfirst ? props.theme.colors.dark3 : props.theme.colors.dark1};
+    pointer-events: ${(props) => (props.isfirst ? "none" : "auto")};
+    cursor: ${(props) => (props.isfirst ? "default" : "pointer")};
   }
 
   // Next page
   &:nth-child(3) {
     color: ${(props) =>
-      props.isLast ? props.theme.colors.dark3 : props.theme.colors.dark1};
-    pointer-events: ${(props) => (props.isLast ? "none" : "auto")};
-    cursor: ${(props) => (props.isLast ? "default" : "pointer")};
+      props.islast ? props.theme.colors.dark3 : props.theme.colors.dark1};
+    pointer-events: ${(props) => (props.islast ? "none" : "auto")};
+    cursor: ${(props) => (props.islast ? "default" : "pointer")};
   }
 `;
 
-const Pagination = ({ prevPage, nextPage, homePage, isFirst, isLast }) => {
+const Pagination = ({ prevPage, nextPage, homePage, isfirst, islast }) => {
   return (
     <PaginationWrapper>
-      <PaginationStyles isFirst={isFirst} to={prevPage}>
+      <PaginationStyles isfirst={isfirst} to={prevPage}>
         Previous page
       </PaginationStyles>
       <PaginationStyles to={homePage}>Home</PaginationStyles>
-      <PaginationStyles isLast={isLast} to={nextPage}>
+      <PaginationStyles islast={islast} to={nextPage}>
         Next page
       </PaginationStyles>
     </PaginationWrapper>
