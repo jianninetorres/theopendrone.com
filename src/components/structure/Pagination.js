@@ -3,7 +3,7 @@ import PaginationWrapper from "./PaginationWrapper";
 import styled from "styled-components";
 import { Link } from "gatsby";
 
-const PaginationElement = styled((props) => <Link {...props} />)`
+const PaginationStyles = styled((props) => <Link {...props} />)`
   font-size: 0.875rem;
   line-height: 1.125rem;
   text-decoration: none;
@@ -13,14 +13,36 @@ const PaginationElement = styled((props) => <Link {...props} />)`
   &:focus {
     text-decoration: underline;
   }
+
+  // Previous page
+  &:nth-child(1) {
+    color: ${(props) =>
+      props.isFirst ? props.theme.colors.dark3 : props.theme.colors.dark1};
+    pointer-events: ${(props) => (props.isFirst ? "none" : "auto")};
+    cursor: ${(props) => (props.isFirst ? "default" : "pointer")};
+  }
+
+  // Next page
+  &:nth-child(3) {
+    color: ${(props) =>
+      props.isLast ? props.theme.colors.dark3 : props.theme.colors.dark1};
+    pointer-events: ${(props) => (props.isLast ? "none" : "auto")};
+    cursor: ${(props) => (props.isLast ? "default" : "pointer")};
+  }
 `;
 
-export const Pagination = ({ prevPage, nextPage }) => {
+const Pagination = ({ prevPage, nextPage, homePage, isFirst, isLast }) => {
   return (
-    <PaginationWrapper isFirst={isFirst} isLast={isLast} homePage={homePage}>
-      <PaginationElement to={prevPage}>Previous page</PaginationElement>
-      <PaginationElement to={homePage}>Home</PaginationElement>
-      <PaginationElement to={nextPage}>Next page</PaginationElement>
+    <PaginationWrapper>
+      <PaginationStyles isFirst={isFirst} to={prevPage}>
+        Previous page
+      </PaginationStyles>
+      <PaginationStyles to={homePage}>Home</PaginationStyles>
+      <PaginationStyles isLast={isLast} to={nextPage}>
+        Next page
+      </PaginationStyles>
     </PaginationWrapper>
   );
 };
+
+export default Pagination;
