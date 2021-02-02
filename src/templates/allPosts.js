@@ -13,12 +13,9 @@ const allPosts = ({ pageContext, data }) => {
   const homePage = `/`;
   const isfirstBlogPage = currentPage === 1 ? true : false;
   const islastBlogPage = currentPage === numPages ? true : false;
-  const prevPage = currentPage - 1 === 0 ? "" : `/blog/${currentPage - 1}/`;
 
-  console.log("currentPage", currentPage);
-  console.log(`isfirstBlogPage, ${isfirstBlogPage}`);
-  console.log("currentPage - 1:", currentPage - 1);
-  console.log("prevPage:", prevPage);
+  // if the previous page is the home page (0), don't add a route
+  const prevPage = currentPage - 1 === 0 ? "" : `/blog/${currentPage - 1}/`;
 
   // give nextPage a route if there is a page following the current page
   const nextPage =
