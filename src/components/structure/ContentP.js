@@ -3,10 +3,17 @@ import styled from "styled-components";
 
 const ContentPStyles = styled.p`
   width: 100%;
+  max-width: ${(props) => props.maxWidth || ""};
+  line-height: 1.5;
+  font-size: 1rem;
+
+  @media ${(props) => props.theme.breakpoints.tabletPortrait} {
+    font-size: 1.25rem;
+  }
 `;
 
-const ContentP = ({ children }) => {
-  return <ContentPStyles>{children}</ContentPStyles>;
+const ContentP = ({ children, maxWidth }) => {
+  return <ContentPStyles maxWidth={maxWidth}>{children}</ContentPStyles>;
 };
 
 export default ContentP;
