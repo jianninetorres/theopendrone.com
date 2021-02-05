@@ -25,6 +25,15 @@ export default {
     desktopXL: "only screen and (min-width: 1600px)",
     desktopXXL: "only screen and (min-width: 1920px)",
   },
+  maxWidths: {
+    mobile: "425px",
+    tabletPortrait: "768px",
+    tabletLandscape: "1024px",
+    desktop: "1200px",
+    desktopL: "1440px",
+    desktopXL: "1600px",
+    desktopXXL: "1920px",
+  },
   spacings: {
     base: "16px",
   },
