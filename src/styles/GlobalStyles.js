@@ -23,6 +23,10 @@ const GlobalStyles = createGlobalStyle`
         box-sizing: inherit;
     }
 
+    h1, h2, h3, h4, h5, h6 {
+        font-family: ${(props) => props.theme.fonts.headers};
+    }
+
     h1, h2 {
         font-weight: bold;
         line-height: 1.2;
