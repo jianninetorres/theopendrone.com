@@ -152,10 +152,6 @@ const NavStyles = styled.nav`
   a {
     text-decoration: none;
     width: 100%;
-
-    &:hover,
-    &:focus {
-    }
   }
 `;
 
