@@ -8,7 +8,7 @@ const SectionStyles = styled.section`
   margin: 0 auto;
 
   @media ${(props) => props.theme.breakpoints.tabletLandscape} {
-    padding: calc(var(--base-size) * 2);
+    padding: calc(var(--base-size) * 3);
   }
 
   @media ${(props) => props.theme.breakpoints.desktop} {
