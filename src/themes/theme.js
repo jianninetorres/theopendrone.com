@@ -1,6 +1,7 @@
 export default {
   fonts: {
-    main: "Montserrat, sans-serif",
+    headers: "Montserrat, sans-serif",
+    main: "Roboto, sans-serif",
     code: "Roboto Mono, monospace",
   },
   colors: {
