@@ -1,7 +1,4 @@
 module.exports = {
-  siteMetadata: {
-    title: "TheOpenDrone",
-  },
   plugins: [
     "gatsby-plugin-styled-components",
     "gatsby-plugin-sharp",
