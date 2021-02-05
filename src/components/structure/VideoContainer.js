@@ -23,7 +23,7 @@ const VideoContainerStyles = styled.div`
   }
 
   @media ${(props) => props.theme.breakpoints.desktopXXL} {
-    max-width: var(--desktop);
+    max-width: ${(props) => props.theme.maxWidths.desktopXL};
     margin: 0 auto;
   }
 `;
