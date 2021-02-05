@@ -12,7 +12,7 @@ const NavStyles = styled.nav`
   width: 100%;
   z-index: 100;
   @media ${(props) => props.theme.breakpoints.tabletLandscape} {
-    background-color: ${(props) => props.bgColor};
+    background-color: ${(props) => props.bgColor || "white"};
     transition: background-color 0.2s ease;
     border-bottom: 1px solid ${(props) => props.navBottomBorder};
   }
@@ -66,7 +66,7 @@ const NavStyles = styled.nav`
 
     @media ${(props) => props.theme.breakpoints.tabletLandscape} {
       margin: 0;
-      font-size: calc(var(--base-size) * 2);
+      font-size: calc(var(--base-size) * 1.5);
       &:not(last-child) {
         margin: 0 var(--base-size);
       }
@@ -184,7 +184,6 @@ const Nav = () => {
         setNavColor(white);
         setNavBottomBorder(lightGrey);
       } else {
-        setNavColor(transparent);
         setNavBottomBorder("none");
       }
     });
