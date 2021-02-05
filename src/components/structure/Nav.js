@@ -167,7 +167,6 @@ const Nav = () => {
 
   const white = "#FFFFFF";
   const lightGrey = "#CFD8E1";
-  const transparent = "transparent";
 
   useEffect(() => {
     let mql = window.matchMedia("(min-width: 1024px)");
