@@ -13,10 +13,10 @@ const ImageStylesContainer = styled.div`
   }
 `;
 
-const Image = ({ imgSrc, orderMobile, orderTablet }) => {
+const Image = ({ imgSrc, orderMobile, orderTablet, alt }) => {
   return (
     <ImageStylesContainer orderMobile={orderMobile} orderTablet={orderTablet}>
-      <img src={imgSrc} />
+      <img src={imgSrc} alt={alt ? alt : ""} />
     </ImageStylesContainer>
   );
 };
