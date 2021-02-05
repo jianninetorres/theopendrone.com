@@ -12,6 +12,7 @@ const GlobalStyles = createGlobalStyle`
     html {
         font-size: var(--base-size);
         box-sizing: border-box;
+        font-family: ${(props) => props.theme.fonts.fallbacks};
         font-family: ${(props) => props.theme.fonts.main};
     }
 

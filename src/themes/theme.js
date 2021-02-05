@@ -1,7 +1,8 @@
 export default {
   fonts: {
-    headers: "Montserrat, sans-serif",
-    main: "Roboto, sans-serif",
+    headers: "Poppins, sans-serif",
+    main: "Poppins, sans-serif",
+    fallbacks: "proxima-nova, Helvetica Neue, Helvetica, Arial, sans-serif",
     code: "Roboto Mono, monospace",
   },
   colors: {

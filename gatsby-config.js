@@ -23,7 +23,15 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [`roboto mono`, `roboto\:400`, `montserrat\:400,600`],
+        fonts: [
+          `roboto mono`,
+          `poppins`,
+          `montserrat\:400,600`,
+          `proxima-nova`,
+          `helvetica neue`,
+          `helvetica`,
+          `arial`,
+        ],
         display: "swap",
       },
     },
