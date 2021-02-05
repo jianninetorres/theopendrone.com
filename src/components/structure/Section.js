@@ -12,7 +12,7 @@ const SectionStyles = styled.section`
   }
 
   @media ${(props) => props.theme.breakpoints.desktop} {
-    padding: calc(var(--base-size) * 6) 0;
+    padding: calc(var(--base-size) * 6) calc(var(--base-size) * 2);
   }
 `;
 
