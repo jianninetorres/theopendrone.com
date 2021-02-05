@@ -31,7 +31,12 @@ const allPosts = ({ pageContext, data }) => {
           title={post.node.frontmatter.title}
           excerpt={post.node.frontmatter.excerpt}
           slug={post.node.frontmatter.slug}
-        />
+        >
+          {post.node.frontmatter.date}
+          {post.node.frontmatter.title}
+          {post.node.frontmatter.excerpt}
+          {post.node.frontmatter.slug}
+        </div>
       ))}
       <Pagination
         homePage={homePage}
