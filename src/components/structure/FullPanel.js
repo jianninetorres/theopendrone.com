@@ -15,9 +15,9 @@ const FullPanelStyles = styled.div`
     margin-top: var(--base-size);
     width: 100%;
     max-width: 700px;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     text-align: center;
-    line-height: 1.2;
+    line-height: 1.5;
     @media ${(props) => props.theme.breakpoints.tabletLandscape} {
       margin-top: calc(var(--base-size) * 2);
       font-size: 2rem;

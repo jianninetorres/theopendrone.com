@@ -4,7 +4,6 @@ import styled from "styled-components";
 const ContentPStyles = styled.p`
   width: 100%;
   max-width: ${(props) => props.maxWidth || ""};
-  line-height: 1.5;
   font-size: 1rem;
 
   @media ${(props) => props.theme.breakpoints.tabletPortrait} {
