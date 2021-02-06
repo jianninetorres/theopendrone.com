@@ -3,6 +3,8 @@ import React from "react";
 import "normalize.css";
 import "reset.css";
 import "fontsource-poppins";
+import "fontsource-open-sans";
+import "fontsource-montserrat";
 import styled from "styled-components";
 import Nav from "./Nav";
 
