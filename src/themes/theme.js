@@ -1,9 +1,9 @@
 export default {
   fonts: {
     headers: "Poppins, sans-serif",
+    headersFallbacks: "Montserrat, sans-serif",
     main: "Poppins, sans-serif",
-    fallbacks: "proxima-nova, Helvetica Neue, Helvetica, Arial, sans-serif",
-    code: "Roboto Mono, monospace",
+    mainFallbacks: "Open Sans, sans-serif",
   },
   colors: {
     black: "#212F3D",

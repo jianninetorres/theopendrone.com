@@ -6560,6 +6560,16 @@ follow-redirects@^1.0.0, follow-redirects@^1.10.0:
   resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.13.1.tgz#5f69b813376cee4fd0474a3aba835df04ab763b7"
   integrity sha512-SSG5xmZh1mkPGyKzjZP8zLjltIfpW32Y5QpdNJyjcfGxK3qo3NDDkZOZSFiGn1A6SclQxY9GzEwAHQ3dmYRWpg==
 
+fontsource-montserrat@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/fontsource-montserrat/-/fontsource-montserrat-4.0.0.tgz#3af39e31e2f77d3b131288ad4fdc4968c4b34975"
+  integrity sha512-0mpa23YJBLxE5fEVVBgcHbuhjiH98EA4XjRVocP/sCJAGoODvXCRqLTSVLmoVFBas4X8WnHU4rv5QOxB1e4TZw==
+
+fontsource-open-sans@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/fontsource-open-sans/-/fontsource-open-sans-4.0.0.tgz#f5884fe491b86e522e6ce10dbddaebd5d152fa95"
+  integrity sha512-WWiMhDr/rgDPnw1tKjcqPpjRDJDrDnNVLpfscr7wwbpK33q3zcVnkhBOUcaZZlw3y1iRc+pj/ciPzLWExKT3zw==
+
 fontsource-poppins@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/fontsource-poppins/-/fontsource-poppins-4.0.0.tgz#56610d2223ac988a60d5cbd0d789ead5ee6ea11e"

@@ -12,7 +12,7 @@ const GlobalStyles = createGlobalStyle`
     html {
         font-size: var(--base-size);
         box-sizing: border-box;
-        font-family: ${(props) => props.theme.fonts.fallbacks};
+        font-family: ${(props) => props.theme.fonts.mainFallbacks};
         font-family: ${(props) => props.theme.fonts.main};
     }
 
@@ -25,6 +25,7 @@ const GlobalStyles = createGlobalStyle`
     }
 
     h1, h2, h3, h4, h5, h6 {
+        font-family: ${(props) => props.theme.fonts.headersFallbacks};
         font-family: ${(props) => props.theme.fonts.headers};
     }
 
