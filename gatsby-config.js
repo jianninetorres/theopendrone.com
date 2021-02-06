@@ -21,21 +21,6 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-google-fonts`,
-      options: {
-        fonts: [
-          `roboto mono`,
-          `poppins`,
-          `montserrat\:400,600`,
-          `proxima-nova`,
-          `helvetica neue`,
-          `helvetica`,
-          `arial`,
-        ],
-        display: "swap",
-      },
-    },
-    {
       resolve: "gatsby-plugin-manifest",
       options: {
         icon: "src/assets/images/favicon.png",
