@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import PlayButton from "./PlayButton";
 import HeaderH1 from "../structure/HeaderH1";
 import Button from "../structure/Button";
@@ -41,8 +41,19 @@ const VideoContainerStyles = styled.div`
   }
 `;
 
-const VideoContainer = ({ videoSrc }) => {
+const VideoContainer = ({ videoSrc, videoSrcMobile }) => {
   const [isVideoPlaying, setIsVideoPlaying] = useState(false);
+  const [video, setVideo] = useState(videoSrcMobile);
+
+  useEffect(() => {
+    const viewportSize = window.innerWidth;
+
+    if (viewportSize > 768) {
+      setVideo(videoSrc);
+    } else {
+      setVideo(videoSrcMobile);
+    }
+  }, [videoSrc, videoSrcMobile]);
 
   const playVideo = () => {
     const video = document.getElementById("video");
@@ -58,7 +69,7 @@ const VideoContainer = ({ videoSrc }) => {
   return (
     <VideoContainerStyles onClick={playVideo}>
       <video playsInline loop muted preload="auto" id="video">
-        <source src={videoSrc} type="video/mp4" />
+        <source src={video} type="video/mp4" />
       </video>
       {!isVideoPlaying ? (
         <div id="video-content-container">

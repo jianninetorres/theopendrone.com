@@ -1,6 +1,4 @@
 import React from "react";
-import Button from "../components/structure/Button";
-import HeaderH1 from "../components/structure/HeaderH1";
 import FullPanel from "../components/structure/FullPanel";
 import HalfPanel from "../components/structure/HalfPanel";
 import Section from "../components/structure/Section";
@@ -14,6 +12,7 @@ import styled from "styled-components";
 import droneRender1 from "../assets/images/drone-render-1a.jpg";
 import droneRender2 from "../assets/images/drone-render-2a.jpg";
 import MakingOf from "../assets/videos/open-drone-making.mp4";
+import MakingOfMobile from "../assets/videos/open-drone-making-mobile.mp4";
 
 const IndexStyles = styled.div`
   padding: 0 0 var(--base-size);
@@ -29,7 +28,11 @@ const IndexStyles = styled.div`
 const Index = () => {
   return (
     <IndexStyles>
-      <VideoContainer videoSrc={MakingOf} poster={droneRender1} />
+      <VideoContainer
+        videoSrc={MakingOf}
+        videoSrcMobile={MakingOfMobile}
+        poster={droneRender1}
+      />
       <Article>
         <FullPanel h2Title="Open Drone">
           is an open-source framework to provide makers around the world with
