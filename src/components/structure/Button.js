@@ -27,10 +27,11 @@ const Button = ({
   widthL,
   height,
   heightL,
+  onClick,
 }) => {
   return (
     <ButtonStyles
-      type={type}
+      type={type || `button`}
       borderRadius={borderRadius}
       bgColor={bgColor}
       textColor={textColor}
@@ -38,6 +39,7 @@ const Button = ({
       height={height}
       widthL={widthL}
       heightL={heightL}
+      onClick={onClick}
     >
       {children ? children : content}
     </ButtonStyles>
