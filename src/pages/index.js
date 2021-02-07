@@ -13,6 +13,7 @@ import styled from "styled-components";
 
 import droneRender1 from "../assets/images/drone-render-1a.jpg";
 import droneRender2 from "../assets/images/drone-render-2a.jpg";
+import MakingOf from "../assets/videos/open-drone-making.mp4";
 
 const IndexStyles = styled.div`
   padding: 0 0 var(--base-size);
@@ -28,10 +29,7 @@ const IndexStyles = styled.div`
 const Index = () => {
   return (
     <IndexStyles>
-      <VideoContainer>
-        <HeaderH1>An open-source drone framework</HeaderH1>
-        <Button type="button" content="Join the initiative" />
-      </VideoContainer>
+      <VideoContainer videoSrc={MakingOf} poster={droneRender1} />
       <Article>
         <FullPanel h2Title="Open Drone">
           is an open-source framework to provide makers around the world with
