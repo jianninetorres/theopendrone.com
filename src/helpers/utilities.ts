@@ -1,4 +1,4 @@
-export const getViewportSize = (minWidth) => {
+export const mediaQuery = (minWidth) => {
   return window.matchMedia(`(min-width: ${minWidth})`);
 };
 
