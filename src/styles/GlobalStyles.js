@@ -4,6 +4,7 @@ const GlobalStyles = createGlobalStyle`
     :root {
         --base-size: ${(props) => props.theme.spacings.base};
         --black: ${(props) => props.theme.colors.black};
+        --black2: ${(props) => props.theme.colors.black2};
         --blue: ${(props) => props.theme.colors.blue};
         --white: ${(props) => props.theme.colors.white};
         --border-radius: ${(props) => props.theme.borderStyles.radius};

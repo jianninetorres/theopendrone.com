@@ -7,6 +7,7 @@ export default {
   },
   colors: {
     black: "#212F3D",
+    black2: "#000",
     blue: "#2F80ED",
     white: "#fff",
     main1: "hsl(207,70%,59%)",
