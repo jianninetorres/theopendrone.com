@@ -245,7 +245,7 @@ const Nav = () => {
               blog
             </Link>
           </li>
-          <li className="list-container__item">
+          {/* <li className="list-container__item">
             <Link
               to="/forum"
               activeStyle={{ color: `var(--hot-pink)` }}
@@ -262,7 +262,7 @@ const Nav = () => {
             >
               contact
             </Link>
-          </li>
+          </li> */}
         </ul>
       </div>
     </NavStyles>
