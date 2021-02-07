@@ -215,7 +215,7 @@ const Nav = () => {
               aria-label="home"
               tabIndex={0}
             ></div>
-            <p>The Open Drone</p>
+            <p>Open Drone</p>
           </Link>
           <div
             className="menu-burger"
