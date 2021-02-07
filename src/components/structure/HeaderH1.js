@@ -6,6 +6,7 @@ const HeaderH1Styles = styled.h1`
   font-weight: 400;
   background-color: ${(props) => props.theme.colors.black2};
   color: ${(props) => `${props.colour}` || props.theme.colors.black};
+  margin-top: var(--base-size);
 
   @media ${(props) => props.theme.breakpoints.tabletLandscape} {
     font-size: 3.5rem;
