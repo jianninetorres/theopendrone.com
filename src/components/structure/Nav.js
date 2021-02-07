@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link } from "gatsby";
+import { mediaQuery, windowOffSetY } from "../../helpers/utilities";
 
 import styled from "styled-components";
 import logo from "../../assets/images/icon.svg";
@@ -165,9 +166,8 @@ const Nav = () => {
   const lightGrey = "#CFD8E1";
 
   useEffect(() => {
-    let mql = window.matchMedia("(min-width: 1024px)");
-    let windowPageYOffset =
-      window.pageYOffset || document.documentElement.scrollTop;
+    let mql = mediaQuery("1024px");
+    let windowPageYOffset = windowOffSetY();
 
     if (windowPageYOffset > 0) {
       setNavColor(white);
