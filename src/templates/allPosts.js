@@ -1,11 +1,23 @@
 import React from "react";
 import { graphql } from "gatsby";
 import Pagination from "../components/structure/Pagination";
+import Section from "../components/structure/Section";
+import Post from "../components/structure/Post";
 import styled from "styled-components";
 
 const PostStyles = styled.div`
   position: relative;
-  top: 100px;
+
+  @media ${(props) => props.theme.breakpoints.tabletLandscape} {
+    top: 100px;
+  }
+
+  section {
+    @media ${(props) => props.theme.breakpoints.tabletLandscape} {
+      padding-top: calc(var(--base-size) * 3);
+      padding-bottom: calc(var(--base-size) * 3);
+    }
+  }
 `;
 
 const allPosts = ({ pageContext, data }) => {
@@ -21,22 +33,23 @@ const allPosts = ({ pageContext, data }) => {
   const nextPage =
     currentPage + 1 === numPages ? `/blog/${currentPage + 1}` : "";
   const posts = data.allMdx.edges;
+  console.log(posts);
 
   return (
     <PostStyles>
       {posts.map((post) => (
-        <div
-          key={post.node.frontmatter.slug}
-          date={post.node.frontmatter.date}
-          title={post.node.frontmatter.title}
-          excerpt={post.node.frontmatter.excerpt}
-          slug={post.node.frontmatter.slug}
-        >
-          {post.node.frontmatter.date}
-          {post.node.frontmatter.title}
-          {post.node.frontmatter.excerpt}
-          {post.node.frontmatter.slug}
-        </div>
+        <Section>
+          <Post
+            key={post.node.frontmatter.slug}
+            date={post.node.frontmatter.date}
+            title={post.node.frontmatter.title}
+            excerpt={post.node.frontmatter.excerpt}
+            slug={post.node.frontmatter.slug}
+            featureImage={
+              post.node.frontmatter.featureImage.childImageSharp.fixed.src
+            }
+          />
+        </Section>
       ))}
       <Pagination
         homePage={homePage}
@@ -65,6 +78,13 @@ export const pageQuery = graphql`
             title
             date(formatString: "MMMM DD, YYYY")
             excerpt
+            featureImage {
+              childImageSharp {
+                fixed {
+                  src
+                }
+              }
+            }
           }
         }
       }
