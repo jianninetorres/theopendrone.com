@@ -4,7 +4,7 @@ import styled from "styled-components";
 const SectionStyles = styled.section`
   padding: calc(var(--base-size) * 2);
   width: 100%;
-  max-width: var(--desktopXXL);
+  max-width: var(--desktop2XL);
   margin: 0 auto;
 
   @media ${(props) => props.theme.breakpoints.tabletPortrait} {

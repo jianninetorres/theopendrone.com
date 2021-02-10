@@ -22,7 +22,7 @@ const NavStyles = styled.nav`
     width: 100%;
     @media ${(props) => props.theme.breakpoints.tabletLandscape} {
       display: flex;
-      max-width: var(--desktopXXL);
+      max-width: var(--desktop2XL);
       margin: 0 auto;
     }
   }

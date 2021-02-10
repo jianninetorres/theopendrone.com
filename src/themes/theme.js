@@ -25,7 +25,7 @@ export default {
     desktop: "only screen and (min-width: 1200px)",
     desktopL: "only screen and (min-width: 1440px)",
     desktopXL: "only screen and (min-width: 1600px)",
-    desktopXXL: "only screen and (min-width: 1920px)",
+    desktop2XL: "only screen and (min-width: 1920px)",
   },
   maxWidths: {
     mobile: "425px",
@@ -34,7 +34,7 @@ export default {
     desktop: "1200px",
     desktopL: "1440px",
     desktopXL: "1600px",
-    desktopXXL: "1920px",
+    desktop2XL: "1920px",
   },
   spacings: {
     base: "16px",

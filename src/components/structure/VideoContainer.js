@@ -16,7 +16,7 @@ const VideoContainerStyles = styled.div`
     justify-content: flex-end;
   }
 
-  @media ${(props) => props.theme.breakpoints.desktopXXL} {
+  @media ${(props) => props.theme.breakpoints.desktop2XL} {
     max-width: ${(props) => props.theme.maxWidths.desktopXL};
     margin: 0 auto;
   }
