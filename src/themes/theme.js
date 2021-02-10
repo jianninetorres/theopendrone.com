@@ -35,6 +35,7 @@ export default {
     desktopL: "1440px",
     desktopXL: "1600px",
     desktop2XL: "1920px",
+    desktop3XL: "2200px",
   },
   spacings: {
     base: "16px",
