@@ -1,4 +1,6 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHandHoldingMedical } from "@fortawesome/free-solid-svg-icons";
 import FullPanel from "../components/structure/FullPanel";
 import HalfPanel from "../components/structure/HalfPanel";
 import Section from "../components/structure/Section";
@@ -40,16 +42,45 @@ const Index = () => {
           essential supplies to those in need.
         </FullPanel>
       </Article>
+      <Article bgColor="#2F80ED" flexDirection="column" alignItems="center">
+        <FontAwesomeIcon
+          icon={faHandHoldingMedical}
+          size="4x"
+          color="white"
+          margin-bottom="16px"
+        />
+        <ContentP
+          fontSize="1.25rem"
+          maxWidth="900px"
+          textAlign="center"
+          textColor="white"
+          marginTop="16px"
+          marginBottom="0"
+        >
+          To repair supply chains in these turbulent times, we are providing a
+          safe, contactless, and fast method to deliver essential supplies to
+          those who need them. The purpose of this project is to create a
+          service where drone delivery can be brought to anyone, anywhere. To
+          ensure we're having the greatest impact possible, we're working to
+          provide rapid delivery to hospitals in rural areas
+        </ContentP>
+      </Article>
       <Section>
         <HalfPanel placeItems="center">
           <Image imgSrc={droneRender1} />
           <div>
-            <H3>A non-profit platform</H3>
+            <H3>What sets us Apart?</H3>
             <ContentP maxWidth="600px">
-              OpenDrone aims to transform the way the world delivers essential
-              supplies. Through using an open-source design, this platform
-              enables startups and makers all across the world to further
-              develop and individualize the product to better suit local needs.
+              We’re building a drone system that does not require any
+              infrastructure, allowing us to implement this in remote areas,
+              bringing down delivery times from hours to minutes.
+            </ContentP>
+            <ContentP maxWidth="600px">
+              Drone delivery is something that has been worked on for a long
+              time, but governments have only recently allowed drone systems to
+              operate commercially. What sets us apart is that we're building a
+              service for those who are not large enough to do business with the
+              giants in the space
             </ContentP>
           </div>
         </HalfPanel>
@@ -59,12 +90,9 @@ const Index = () => {
           <div>
             <H3>Open-source drone template</H3>
             <ContentP maxWidth="600px">
-              OpenDrone provides a working, open-source drone template that any
-              maker with a 3D printer and basic electronics can make. During the
-              pandemic, supply chains have suffered from delays, inefficient
-              scheduling, and a death of available transport; drones provide a
-              safe, contactless, and quick method of delivering essential
-              supplies to those who need them.
+              Instead of building warehouses and large centers, we're focused on
+              only bringing what is necessary - the drone itself, so that anyone
+              can use delivery, even those in the most remote areas.
             </ContentP>
           </div>
           <Image imgSrc={droneRender2} orderMobile="-1" orderTablet="1" />
