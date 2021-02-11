@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "gatsby";
 import PlayButton from "./PlayButton";
 import HeaderH1 from "../structure/HeaderH1";
-import Button from "../structure/Button";
 import styled from "styled-components";
 
 const VideoContainerStyles = styled.div`
@@ -39,6 +39,20 @@ const VideoContainerStyles = styled.div`
     min-height: 400px;
     background-color: var(--black2);
   }
+
+  a {
+    background-color: var(--blue);
+    border: none;
+    border-radius: var(--border-radius);
+    padding: var(--base-size);
+    color: var(--white);
+    text-decoration: none;
+
+    &:hover {
+      transform: scale(1.05);
+      transition: transform 0.2s linear;
+    }
+  }
 `;
 
 const VideoContainer = ({ videoSrc, videoSrcMobile }) => {
@@ -75,7 +89,7 @@ const VideoContainer = ({ videoSrc, videoSrcMobile }) => {
         <div id="video-content-container">
           <PlayButton onClick={playVideo} />
           <HeaderH1 colour="white">An open-source drone framework</HeaderH1>
-          <Button type="button" content="Join the initiative" />
+          <Link to="/blog/1">Join the initiative</Link>
         </div>
       ) : (
         ""
