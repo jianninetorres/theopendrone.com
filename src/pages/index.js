@@ -17,7 +17,7 @@ import MakingOfMobile from "../assets/videos/open-drone-making-mobile.mp4";
 const IndexStyles = styled.div`
   padding: 0 0 var(--base-size);
   @media ${(props) => props.theme.breakpoints.tabletLandscape} {
-    padding: calc(var(--base-size) * 5) 0;
+    padding: calc(var(--base-size) * 6) 0;
   }
 
   h1 {
