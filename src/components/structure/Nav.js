@@ -111,15 +111,14 @@ const NavStyles = styled.nav`
     display: inline-flex;
     flex-direction: row;
     align-items: center;
+    width: max-content;
 
-    p {
-      font-size: var(--base-size);
-      color: var(--black);
-      margin-left: calc(var(--base-size) * 1.5);
+    font-size: var(--base-size);
+    color: var(--black);
+    margin-left: calc(var(--base-size) * 4);
 
-      @media ${(props) => props.theme.breakpoints.tabletLandscape} {
-        font-size: calc(var(--base-size) * 2);
-      }
+    @media ${(props) => props.theme.breakpoints.tabletLandscape} {
+      font-size: calc(var(--base-size) * 2);
     }
   }
 
@@ -127,7 +126,6 @@ const NavStyles = styled.nav`
     background: url(${logo}) no-repeat center center;
     width: 100%;
     max-width: 48px;
-    height: 48px;
     padding: 16px 0;
     flex-basis: 300px;
     flex: 1 1 auto;
@@ -208,15 +206,17 @@ const Nav = () => {
     >
       <div className="nav-wrapper">
         <div className="links-container">
-          <Link to="/" className="logo-container">
-            <div
-              className="logo"
+          <div className="logo">
+            <Link
+              to="/"
+              className="logo-container"
               role="button"
               aria-label="home"
               tabIndex={0}
-            ></div>
-            <p>Open Drone</p>
-          </Link>
+            >
+              Open Drone
+            </Link>
+          </div>
           <div
             className="menu-burger"
             onClick={onClickNav}
