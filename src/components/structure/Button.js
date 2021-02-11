@@ -9,6 +9,12 @@ const ButtonStyles = styled.button`
   color: ${(props) => props.textColor || `var(--white)`};
   width: ${(props) => props.width || ""};
   height: ${(props) => props.height || ""};
+  transition: transform 0.2s linear;
+
+  &:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s linear;
+  }
 
   @media ${(props) => props.theme.breakpoints.desktop} {
     width: ${(props) => props.widthL || ""};
