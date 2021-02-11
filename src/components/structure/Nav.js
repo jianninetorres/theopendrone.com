@@ -263,6 +263,11 @@ const Nav = () => {
               contact
             </Link>
           </li> */}
+          <li className="list-container__item list-container__item--button">
+            <Link to="/" className="start-button">
+              Start
+            </Link>
+          </li>
         </ul>
       </div>
     </NavStyles>
