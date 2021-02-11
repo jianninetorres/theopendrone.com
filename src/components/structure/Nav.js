@@ -57,7 +57,7 @@ const NavStyles = styled.nav`
     justify-content: center;
     margin: 16px 0;
     font-size: var(--base-size);
-    > a {
+    > a:not(.start-button) {
       color: var(--black);
       &:hover {
         color: var(--blue);
@@ -83,11 +83,15 @@ const NavStyles = styled.nav`
       display: none;
       @media ${(props) => props.theme.breakpoints.tabletLandscape} {
         display: flex;
+        background-color: ${(props) => props.theme.colors.blue};
         height: calc(var(--base-size) * 4);
         border-radius: calc(var(--base-size) * 2);
         cursor: pointer;
+        transition: transform 0.2s linear;
 
         &:hover {
+          transform: scale(1.05);
+          transition: transform 0.2s linear;
         }
 
         > a {
@@ -98,6 +102,7 @@ const NavStyles = styled.nav`
           justify-content: center;
           padding: 0 calc(var(--base-size) * 2);
           height: 100%;
+          text-decoration: none;
           &:hover,
           &:visited {
             color: var(--white);
