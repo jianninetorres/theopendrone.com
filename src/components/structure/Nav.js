@@ -161,11 +161,9 @@ const NavStyles = styled.nav`
 
 const Nav = () => {
   const [toggleNav, setToggleNav] = useState("list-container");
-  const [navColor, setNavColor] = useState("transparent");
   const [navBottomBorder, setNavBottomBorder] = useState("none");
   const navRef = useRef(null);
 
-  const white = "#FFFFFF";
   const lightGrey = "#CFD8E1";
 
   useEffect(() => {
@@ -173,13 +171,11 @@ const Nav = () => {
     let windowPageYOffset = windowOffSetY();
 
     if (windowPageYOffset > 0) {
-      setNavColor(white);
       setNavBottomBorder(lightGrey);
     }
 
     window.addEventListener("scroll", () => {
       if (mql.matches && window.scrollY > 0) {
-        setNavColor(white);
         setNavBottomBorder(lightGrey);
       } else {
         setNavBottomBorder("none");
@@ -204,11 +200,7 @@ const Nav = () => {
   };
 
   return (
-    <NavStyles
-      bgColor={navColor}
-      navBottomBorder={navBottomBorder}
-      ref={navRef}
-    >
+    <NavStyles navBottomBorder={navBottomBorder} ref={navRef}>
       <div className="nav-wrapper">
         <div className="links-container">
           <div className="logo">
