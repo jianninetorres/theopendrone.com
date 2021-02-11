@@ -80,7 +80,7 @@ const NavStyles = styled.nav`
     }
 
     &--button {
-      display: none;
+      margin-bottom: 0;
       @media ${(props) => props.theme.breakpoints.tabletLandscape} {
         display: flex;
         background-color: ${(props) => props.theme.colors.blue};
@@ -262,7 +262,7 @@ const Nav = () => {
           </li> */}
           <li className="list-container__item list-container__item--button">
             <Link to="/" className="start-button">
-              Start
+              Get involved
             </Link>
           </li>
         </ul>
