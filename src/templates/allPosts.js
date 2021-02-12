@@ -2,7 +2,7 @@ import React from "react";
 import { graphql } from "gatsby";
 import Pagination from "../components/structure/Pagination";
 import Section from "../components/structure/Section";
-import Post from "../components/structure/Post";
+import ContentCard from "../components/structure/ContentCard";
 import styled from "styled-components";
 
 const PostStyles = styled.div`
@@ -39,7 +39,7 @@ const allPosts = ({ pageContext, data }) => {
     <PostStyles>
       {posts.map((post) => (
         <Section>
-          <Post
+          <ContentCard
             key={post.node.frontmatter.slug}
             date={post.node.frontmatter.date}
             title={post.node.frontmatter.title}
