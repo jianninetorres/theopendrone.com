@@ -8,7 +8,7 @@ const PostStyles = styled.div`
   max-width: 700px;
   margin: 0 auto;
   @media ${(props) => props.theme.breakpoints.tabletLandscape} {
-    top: 100px;
+    padding-top: 100px;
   }
 
   p {
