@@ -1,15 +1,27 @@
 import React from "react";
-import Section from "./Section";
 import H2Title from "./H2Title";
 import ContentP from "./ContentP";
 import styled from "styled-components";
 
-const FullPanelStyles = styled.div`
+const FullPanelStyles = styled.article`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding: calc(var(--base-size) * 2);
+
+  @media ${(props) => props.theme.breakpoints.tabletPortrait} {
+    padding: calc(var(--base-size) * 4);
+  }
+
+  @media ${(props) => props.theme.breakpoints.tabletLandscape} {
+    padding: calc(var(--base-size) * 5);
+  }
+
+  @media ${(props) => props.theme.breakpoints.desktop} {
+    padding: calc(var(--base-size) * 6) calc(var(--base-size) * 2);
+  }
 
   p {
     margin-top: var(--base-size);
@@ -27,14 +39,12 @@ const FullPanelStyles = styled.div`
 
 const FullPanel = ({ children, h2Title }) => {
   return (
-    <Section>
-      <FullPanelStyles>
-        <H2Title textAlign={"center"}>{h2Title}</H2Title>
-        <ContentP textAlign={"center"} maxWidth={"720px"}>
-          {children}
-        </ContentP>
-      </FullPanelStyles>
-    </Section>
+    <FullPanelStyles>
+      <H2Title textAlign={"center"}>{h2Title}</H2Title>
+      <ContentP textAlign={"center"} maxWidth={"720px"}>
+        {children}
+      </ContentP>
+    </FullPanelStyles>
   );
 };
 
