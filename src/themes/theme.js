@@ -17,6 +17,7 @@ export default {
     dark3: "hsl(227,2%,64%)",
     light1: "hsl(0,0%,97%)",
     light2: "hsl(0,0%,99%)",
+    lightgrey1: "#E1E4E6",
   },
   breakpoints: {
     mobile: "only screen and (min-width: 425px)",
