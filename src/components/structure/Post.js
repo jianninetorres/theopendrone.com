@@ -1,6 +1,8 @@
 import React from "react";
+import { backToPreviousPage } from "../../helpers/utilities";
 import styled from "styled-components";
 import Article from "./Article";
+import Button from "./Button";
 
 const PostStyles = styled.div`
   position: relative;
@@ -16,10 +18,17 @@ const PostStyles = styled.div`
   }
 `;
 
+const backToBlog = () => {
+  backToPreviousPage();
+};
+
 const Post = ({ children }) => {
   return (
     <PostStyles>
-      <Article flexDirection="column">{children}</Article>
+      <Article flexDirection="column">
+        {children}
+        <Button onClick={backToBlog}>Back to blog</Button>
+      </Article>
     </PostStyles>
   );
 };
