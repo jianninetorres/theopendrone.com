@@ -239,7 +239,7 @@ const Nav = () => {
               activeStyle={{ color: `var(--hot-pink)` }}
               onClick={onClickNav}
             >
-              blog
+              Blog
             </Link>
           </li>
           {/* <li className="list-container__item">
