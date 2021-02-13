@@ -33,7 +33,6 @@ const allPosts = ({ pageContext, data }) => {
   const nextPage =
     currentPage + 1 === numPages ? `/blog/${currentPage + 1}` : "";
   const posts = data.allMdx.edges;
-  console.log(posts);
 
   return (
     <PostStyles>
