@@ -9,7 +9,7 @@ const PostStyles = styled.div`
   position: relative;
 
   @media ${(props) => props.theme.breakpoints.tabletLandscape} {
-    top: 100px;
+    padding-top: 100px;
   }
 
   section {
