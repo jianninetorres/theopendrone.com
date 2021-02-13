@@ -13,6 +13,8 @@ const ContentPStyles = styled.p`
 
   @media ${(props) => props.theme.breakpoints.tabletPortrait} {
     font-size: ${(props) => props.fontSize || "1.25rem"};
+    margin-bottom: ${(props) =>
+      props.marginBottomTabletPortrait || props.theme.spacings.base};
   }
 `;
 
@@ -23,6 +25,7 @@ const ContentP = ({
   margins,
   marginTop,
   marginBottom,
+  marginBottomTabletPortrait,
   textAlign,
   textColor,
 }) => {
@@ -33,6 +36,7 @@ const ContentP = ({
       margins={margins}
       marginTop={marginTop}
       marginBottom={marginBottom}
+      marginBottomTabletPortrait={marginBottomTabletPortrait}
       textAlign={textAlign}
       textColor={textColor}
     >
