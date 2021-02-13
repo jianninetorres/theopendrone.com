@@ -47,6 +47,14 @@ const ContentCardStyles = styled.article`
 
   .post-excerpt {
     color: ${(props) => props.theme.colors.dark2};
+    margin-bottom: var(--base-size);
+  }
+
+  a {
+    color: ${(props) => props.theme.colors.dark2};
+    &:hover {
+      color: ${(props) => props.theme.colors.blue};
+    }
   }
 `;
 
