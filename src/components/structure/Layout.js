@@ -7,6 +7,7 @@ import "fontsource-open-sans";
 import "fontsource-montserrat";
 import styled from "styled-components";
 import Nav from "./Nav";
+import Footer from "./Footer";
 
 const MainContentStyles = styled.div`
   padding: calc(var(--base-size) * 5) 0 0;
@@ -21,6 +22,7 @@ const Layout = ({ children }) => (
   <>
     <Nav />
     <MainContentStyles>{children}</MainContentStyles>
+    <Footer />
   </>
 );
 
