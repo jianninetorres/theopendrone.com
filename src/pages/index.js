@@ -35,13 +35,11 @@ const Index = () => {
         videoSrcMobile={MakingOfMobile}
         poster={droneRender1}
       />
-      <Article>
-        <FullPanel h2Title="Open Drone">
-          is an open-source framework to provide makers around the world with
-          the resources to create their own delivery drones to safely provide
-          essential supplies to those in need.
-        </FullPanel>
-      </Article>
+      <FullPanel h2Title="Open Drone">
+        is an open-source framework to provide makers around the world with the
+        resources to create their own delivery drones to safely provide
+        essential supplies to those in need.
+      </FullPanel>
       <Article bgColor="#2F80ED" flexDirection="column" alignItems="center">
         <FontAwesomeIcon
           icon={faHandHoldingMedical}
