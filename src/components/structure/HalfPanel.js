@@ -10,7 +10,7 @@ const HalfPanelStyles = styled.article`
   place-items: ${(props) => props.placeItems || "normal"};
   justify-items: ${(props) => props.justifyItems || "normal"};
 
-  @media ${(props) => props.theme.breakpoints.tabletPortrait} {
+  @media ${(props) => props.theme.breakpoints.tabletLandscape} {
     grid-template-columns: 1fr 1fr;
     grid-gap: calc(var(--base-size) * 4);
   }
