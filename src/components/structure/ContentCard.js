@@ -10,7 +10,7 @@ const ContentCardStyles = styled.article`
   justify-content: center;
   align-items: flex-start;
   width: 100%;
-  max-width: 700px;
+  max-width: 1000px;
 
   @media ${(props) => props.theme.breakpoints.mobile} {
     padding: 0;
@@ -27,10 +27,6 @@ const ContentCardStyles = styled.article`
   img {
     width: 100%;
     height: 100%;
-    //temporary;
-    // border: 1px solid blue;
-    min-height: 150px;
-    //temporary;
 
     @media ${(props) => props.theme.breakpoints.tabletPortrait} {
       margin-right: calc(var(--base-size) * 2);
