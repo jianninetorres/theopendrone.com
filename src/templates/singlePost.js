@@ -30,12 +30,8 @@ const singlePost = ({ data, pageContext }) => {
         <div>
           {newerPost && (
             <Link to={`/blog/${newerPost.frontmatter.slug}`} className="newer">
-              <FontAwesomeIcon
-                icon={faChevronLeft}
-                color="black"
-                margin-bottom="16px"
-              />{" "}
-              Next post: {newerPostTitle}
+              <FontAwesomeIcon icon={faChevronLeft} color="black" /> Next post:{" "}
+              {newerPostTitle}
             </Link>
           )}
         </div>
@@ -43,11 +39,7 @@ const singlePost = ({ data, pageContext }) => {
           {olderPost && (
             <Link to={`/blog/${olderPost.frontmatter.slug}`} className="older">
               Older post: {olderPostTitle}{" "}
-              <FontAwesomeIcon
-                icon={faChevronRight}
-                color="black"
-                margin-bottom="16px"
-              />
+              <FontAwesomeIcon icon={faChevronRight} color="black" />
             </Link>
           )}
         </div>
