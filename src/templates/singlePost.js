@@ -3,7 +3,6 @@ import { graphql, Link } from "gatsby";
 
 // render raw body from mdx
 import { MDXRenderer } from "gatsby-plugin-mdx";
-import H3 from "../components/structure/H3";
 import Image from "../components/structure/Image";
 import Post from "../components/structure/Post";
 
@@ -24,7 +23,8 @@ const singlePost = ({ data, pageContext }) => {
   return (
     <Post>
       <Image imgSrc={featureImage} />
-      <H3>{data.mdx.frontmatter.title}</H3>
+      <h1>{data.mdx.frontmatter.title}</h1>
+      <h4>{data.mdx.frontmatter.date}</h4>
       <MDXRenderer>{data.mdx.body}</MDXRenderer>
       <div className="post-pagination-container">
         <div>
