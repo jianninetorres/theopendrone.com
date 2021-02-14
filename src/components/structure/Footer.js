@@ -115,7 +115,7 @@ const Footer = () => {
             Open Drone
           </Link>
         </div>
-        <Link to="/blog/1">Blog</Link>
+        <Link to="/blog/1">Updates</Link>
         <Link to="/">Donate</Link>
       </FooterStyles>
       <ContactStyles>
