@@ -5,7 +5,7 @@ import Article from "./Article";
 const PostStyles = styled.div`
   position: relative;
   width: 100%;
-  max-width: 700px;
+  max-width: 800px;
   margin: 0 auto;
   @media ${(props) => props.theme.breakpoints.tabletLandscape} {
     padding-top: 100px;
@@ -13,6 +13,9 @@ const PostStyles = styled.div`
 
   h3 {
     margin-top: calc(var(--base-size) * 2);
+    margin-bottom: calc(var(--base-size) * 1.125);
+    font-size: 1.5rem;
+    font-weight: bold;
   }
 
   p {
