@@ -38,6 +38,7 @@ const singlePost = ({ data, pageContext }) => {
             </Link>
           )}
         </div>
+        <Link to="/updates">All updates</Link>
         <div>
           {olderPost && (
             <Link
