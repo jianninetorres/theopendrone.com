@@ -8,6 +8,10 @@ const ArticleStyles = styled.article`
   flex-direction: ${(props) => props.flexDirection || "row"};
   justify-content: ${(props) => props.justifyContent || "flex-start"};
   align-items: ${(props) => props.alignItems || "flex-start"};
+
+  @media ${(props) => props.theme.breakpoints.tabletLandscape} {
+    padding: calc(var(--base-size) * 3);
+  }
 `;
 
 const Article = ({
