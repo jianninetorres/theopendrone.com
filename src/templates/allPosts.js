@@ -31,9 +31,7 @@ const allPosts = ({ pageContext, data }) => {
 
   // give nextPage a route if there is a page following the current page
   const nextPage =
-    currentPage + 1 === numPages || isfirstBlogPage
-      ? `/updates/${currentPage + 1}`
-      : "";
+    currentPage !== islastBlogPage ? `/updates/${currentPage + 1}` : "";
 
   const posts = data.allMdx.edges;
 
