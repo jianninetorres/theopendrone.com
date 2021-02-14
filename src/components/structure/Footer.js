@@ -119,7 +119,7 @@ const Footer = () => {
         <Link to="/">Donate</Link>
       </FooterStyles>
       <ContactStyles>
-        <div>
+        <div id="contact">
           <ContentP>
             If you'd like to get involed or support our mission, please reach
             out to us at. Currently we are only working for medical related

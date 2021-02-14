@@ -261,7 +261,7 @@ const Nav = () => {
             </Link>
           </li> */}
           <li className="list-container__item list-container__item--button">
-            <Link to="/" className="start-button">
+            <Link to="#contact" className="start-button">
               Get involved
             </Link>
           </li>
