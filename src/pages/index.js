@@ -60,7 +60,7 @@ const Index = () => {
           those who need them. The purpose of this project is to create a
           service where drone delivery can be brought to anyone, anywhere. To
           ensure we're having the greatest impact possible, we're working to
-          provide rapid delivery to hospitals in rural areas
+          provide rapid delivery to hospitals in rural areas.
         </ContentP>
       </Article>
       <Section>
