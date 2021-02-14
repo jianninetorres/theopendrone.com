@@ -11,6 +11,10 @@ const PostStyles = styled.div`
     padding-top: 100px;
   }
 
+  h1 {
+    margin-bottom: calc(var(--base-size) * 1 / 2);
+  }
+
   h3 {
     margin-top: calc(var(--base-size) * 2);
     margin-bottom: calc(var(--base-size) * 1.125);
