@@ -66,12 +66,15 @@ const GlobalStyles = createGlobalStyle`
         cursor: pointer;
     }
 
-    ul li {
-        list-style: disc;
-        margin: 0 var(--base-size);
-        line-height: 1.5;
-        &:not(:last-child) {
-            margin-bottom: calc(var(--base-size) / 2);
+    ul {
+        margin-bottom: var(--base-size);
+        li {
+            list-style: disc;
+            margin: 0 var(--base-size);
+            line-height: 1.5;
+            &:not(:last-child) {
+                margin-bottom: calc(var(--base-size) / 2);
+            }
         }
     }
 `;
