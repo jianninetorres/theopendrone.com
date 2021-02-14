@@ -101,8 +101,8 @@ const Footer = () => {
         <hr />
       </HrWrapperStyles>
       <FooterStyles>
-        <Link to="/">Documentation</Link>
-        <Link to="/">Forum</Link>
+        {/* <Link to="/">Documentation</Link> */}
+        {/* <Link to="/">Forum</Link> */}
         <div className="logo-container">
           <img src={logo} className="logo" />
           <Link
@@ -116,7 +116,7 @@ const Footer = () => {
           </Link>
         </div>
         <Link to="/blog/1">Updates</Link>
-        <Link to="/">Donate</Link>
+        {/* <Link to="/">Donate</Link> */}
       </FooterStyles>
       <ContactStyles>
         <div id="contact">
