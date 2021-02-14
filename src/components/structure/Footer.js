@@ -75,8 +75,6 @@ const ContactStyles = styled.section`
     flex-direction: column;
 
     span {
-      margin-bottom: calc(var(--base-size) * 1.5);
-
       a {
         text-decoration: none;
         color: ${(props) => props.theme.colors.black};
@@ -88,6 +86,10 @@ const ContactStyles = styled.section`
           text-decoration: underline;
         }
       }
+    }
+
+    span:not(:last-child) {
+      margin-bottom: calc(var(--base-size) * 1.5);
     }
   }
 `;
