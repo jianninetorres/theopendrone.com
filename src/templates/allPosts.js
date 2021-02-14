@@ -27,11 +27,14 @@ const allPosts = ({ pageContext, data }) => {
   const islastBlogPage = currentPage === numPages ? true : false;
 
   // if the previous page is the home page (0), don't add a route
-  const prevPage = currentPage - 1 === 0 ? "" : `/updates/${currentPage - 1}/`;
+  const prevPage = currentPage - 1 === 0 ? "" : `/updates/${currentPage - 1}`;
 
   // give nextPage a route if there is a page following the current page
   const nextPage =
-    currentPage + 1 === numPages ? `/updates/${currentPage + 1}` : "";
+    currentPage + 1 === numPages || isfirstBlogPage
+      ? `/updates/${currentPage + 1}`
+      : "";
+
   const posts = data.allMdx.edges;
 
   return (
