@@ -120,8 +120,9 @@ const Footer = () => {
       </FooterStyles>
       <ContactStyles>
         <div id="contact">
+          <h2>Get involved</h2>
           <ContentP>
-            If you'd like to get involed or support our mission, please reach
+            If you'd like to get involved or support our mission, please reach
             out to us at. Currently we are only working for medical related
             deliveries, however we will be expanding soon.
           </ContentP>
