@@ -36,6 +36,7 @@ const PostStyles = styled.div`
       color: ${(props) => props.theme.colors.black};
       text-decoration: none;
       width: fit-content;
+      max-width: 200px;
       margin: var(--base-size) 0;
       &:hover {
         color: ${(props) => props.theme.colors.blue};
