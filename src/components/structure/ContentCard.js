@@ -10,7 +10,7 @@ const ContentCardStyles = styled.article`
   justify-content: center;
   align-items: flex-start;
   width: 100%;
-  max-width: 1000px;
+  max-width: 900px;
 
   @media ${(props) => props.theme.breakpoints.mobile} {
     padding: 0;
