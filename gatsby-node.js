@@ -23,7 +23,7 @@ exports.createPages = async function ({ actions, graphql }) {
 
   Array.from({ length: numPages }).forEach((_, i) => {
     actions.createPage({
-      path: `/blog/${i + 1}`,
+      path: `/updates/${i + 1}`,
       component: require.resolve("./src/templates/allPosts.js"),
       context: {
         limit: postsPerPage,
@@ -41,7 +41,7 @@ exports.createPages = async function ({ actions, graphql }) {
     const slug = edge.node.frontmatter.slug;
     const id = edge.node.id;
     actions.createPage({
-      path: `/blog/${slug}`,
+      path: `/updates/${slug}`,
       component: require.resolve(`./src/templates/singlePost.js`),
       context: {
         id,

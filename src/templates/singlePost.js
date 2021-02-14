@@ -29,7 +29,10 @@ const singlePost = ({ data, pageContext }) => {
       <div className="post-pagination-container">
         <div>
           {newerPost && (
-            <Link to={`/blog/${newerPost.frontmatter.slug}`} className="newer">
+            <Link
+              to={`/updates/${newerPost.frontmatter.slug}`}
+              className="newer"
+            >
               <FontAwesomeIcon icon={faChevronLeft} color="black" /> Next post:{" "}
               {newerPostTitle}
             </Link>
@@ -37,7 +40,10 @@ const singlePost = ({ data, pageContext }) => {
         </div>
         <div>
           {olderPost && (
-            <Link to={`/blog/${olderPost.frontmatter.slug}`} className="older">
+            <Link
+              to={`/updates/${olderPost.frontmatter.slug}`}
+              className="older"
+            >
               Older post: {olderPostTitle}{" "}
               <FontAwesomeIcon icon={faChevronRight} color="black" />
             </Link>

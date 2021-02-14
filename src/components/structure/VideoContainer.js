@@ -89,7 +89,7 @@ const VideoContainer = ({ videoSrc, videoSrcMobile }) => {
         <div id="video-content-container">
           <PlayButton onClick={playVideo} />
           <HeaderH1 colour="white">An open-source drone framework</HeaderH1>
-          <Link to="/blog/1">Join the initiative</Link>
+          <Link to="/updates/1">Join the initiative</Link>
         </div>
       ) : (
         ""

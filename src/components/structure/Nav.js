@@ -235,7 +235,7 @@ const Nav = () => {
           </li>
           <li className="list-container__item">
             <Link
-              to="/blog/1"
+              to="/updates/1"
               activeStyle={{ color: `var(--hot-pink)` }}
               onClick={onClickNav}
             >

@@ -62,7 +62,7 @@ const ContentCard = ({ title, key, date, excerpt, slug, featureImage }) => {
         <ContentP>{date}</ContentP>
         <H3>{title}</H3>
         <p className="post-excerpt">{excerpt}</p>
-        <Link to={`/blog/${slug}`}>Read more</Link>
+        <Link to={`/updates/${slug}`}>Read more</Link>
       </div>
     </ContentCardStyles>
   );
