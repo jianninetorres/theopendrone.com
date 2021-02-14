@@ -12,7 +12,7 @@ const PostStyles = styled.div`
   }
 
   h1 {
-    margin-bottom: calc(var(--base-size) * 1 / 2);
+    margin: calc(var(--base-size) * 2) 0 calc(var(--base-size) * 1 / 2);
   }
 
   h3 {
