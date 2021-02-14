@@ -13,6 +13,7 @@ const PostStyles = styled.div`
 
   p {
     margin-bottom: calc(var(--base-size) * 2);
+    font-size: calc(var(--base-size) * 1.125);
   }
 
   .post-pagination-container {
