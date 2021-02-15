@@ -9,6 +9,7 @@ import Image from "../components/structure/Image";
 import H3 from "../components/structure/H3";
 import ContentP from "../components/structure/ContentP";
 import Article from "../components/structure/Article";
+import Seo from "../components/structure/Seo";
 import styled from "styled-components";
 
 import droneRender1 from "../assets/images/blended-wing-design-v3-prototype.png";
@@ -30,6 +31,7 @@ const IndexStyles = styled.div`
 const Index = () => {
   return (
     <IndexStyles>
+      <Seo />
       <VideoContainer
         videoSrc={MakingOf}
         videoSrcMobile={MakingOfMobile}
