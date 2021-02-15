@@ -1,4 +1,13 @@
 module.exports = {
+  siteMetadata: {
+    title: "Open Drone",
+    description:
+      "An open-source framework to provide makers around the world with the resources to create their own delivery drones to safely provide essential supplies to those in need.",
+    url: "https://theopendrone.vercel.app/",
+    image: "/drone-render-1a.jpg",
+    // twitterUsername: "",
+    author: "Naman Pushp",
+  },
   plugins: [
     "gatsby-plugin-styled-components",
     "gatsby-plugin-sharp",

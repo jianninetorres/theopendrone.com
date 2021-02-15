@@ -3,6 +3,7 @@ import { graphql } from "gatsby";
 import Pagination from "../components/structure/Pagination";
 import Section from "../components/structure/Section";
 import ContentCard from "../components/structure/ContentCard";
+import Seo from "../components/structure/Seo";
 import styled from "styled-components";
 
 const PostStyles = styled.div`
@@ -37,6 +38,7 @@ const allPosts = ({ pageContext, data }) => {
 
   return (
     <PostStyles>
+      <Seo />
       {posts.map((post) => (
         <Section>
           <ContentCard

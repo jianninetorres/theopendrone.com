@@ -1,5 +1,6 @@
 import React from "react";
 import { graphql, Link } from "gatsby";
+import Seo from "../components/structure/Seo";
 
 // render raw body from mdx
 import { MDXRenderer } from "gatsby-plugin-mdx";
@@ -18,10 +19,17 @@ const singlePost = ({ data, pageContext }) => {
     ? data.mdx.frontmatter.featureImage.childImageSharp.fixed.src
     : "";
 
+  const seoImage = data.mdx.frontmatter.featureImage.publicURL;
+
   const { newerPost, newerPostTitle, olderPost, olderPostTitle } = pageContext;
 
   return (
     <Post>
+      <Seo
+        title={data.mdx.frontmatter.title}
+        image={seoImage}
+        description={data.mdx.frontmatter.excerpt}
+      />
       <Image imgSrc={featureImage} />
       <h1>{data.mdx.frontmatter.title}</h1>
       <h4>{data.mdx.frontmatter.date}</h4>
@@ -68,6 +76,7 @@ export const pageQuery = graphql`
         slug
         title
         featureImage {
+          publicURL
           childImageSharp {
             fixed {
               src
