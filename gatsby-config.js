@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: "Open Drone",
     description:
-      "An open-source framework to provide makers around the world with the resources to create their own delivery drones to safely provide essential supplies to those in need.",
+      "An open-source framework that provides makers with the resources to create their own delivery drones and safely provide essential supplies.",
     url: "https://theopendrone.vercel.app/",
     image: "/drone-render-1a.jpg",
     // twitterUsername: "",
