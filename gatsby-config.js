@@ -3,8 +3,8 @@ module.exports = {
     title: "Open Drone",
     description:
       "An open-source framework that provides makers with the resources to create their own delivery drones and safely provide essential supplies.",
-    // url: "https://theopendrone.com/",
-    // image: "/drone-render-1a.jpg",
+    url: "",
+    image: "",
     author: "Naman Pushp",
   },
   plugins: [
