@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link } from "gatsby";
 import { mediaQuery, windowOffSetY } from "../../helpers/utilities";
+import BrowserBanner from "./BrowserBanner";
 
 import styled from "styled-components";
 import logo from "../../assets/images/icon.svg";
@@ -201,6 +202,7 @@ const Nav = () => {
 
   return (
     <NavStyles navBottomBorder={navBottomBorder} ref={navRef}>
+      <BrowserBanner />
       <div className="nav-wrapper">
         <div className="links-container">
           <div className="logo">
