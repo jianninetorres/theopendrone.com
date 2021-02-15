@@ -4,7 +4,7 @@ module.exports = {
     description:
       "An open-source framework that provides makers with the resources to create their own delivery drones and safely provide essential supplies.",
     url: "https://theopendrone.vercel.app/",
-    image: "/images/favicon.jpg",
+    image: "images/favicon.jpg",
     // twitterUsername: "",
     author: "Naman Pushp",
   },
