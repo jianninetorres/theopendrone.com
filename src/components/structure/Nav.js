@@ -42,6 +42,7 @@ const NavStyles = styled.nav`
     @media ${(props) => props.theme.breakpoints.tabletLandscape} {
       display: flex;
       justify-content: space-between;
+      margin-bottom: 0;
     }
   }
 
