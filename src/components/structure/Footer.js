@@ -62,6 +62,10 @@ const FooterStyles = styled.footer`
 const ContactStyles = styled.section`
   background-color: ${(props) => props.theme.colors.lightgrey1};
 
+  h2 {
+    margin-bottom: var(--base-size);
+  }
+
   div {
     width: 100%;
     max-width: 1440px;
