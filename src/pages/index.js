@@ -38,9 +38,7 @@ const Index = () => {
         poster={droneRender1}
       />
       <FullPanel h2Title="Open Drone">
-        is an open-source framework to provide makers around the world with the
-        resources to create their own delivery drones to safely provide
-        essential supplies to those in need.
+        is a service that makes drone delivery accessible
       </FullPanel>
       <Article bgColor="#2F80ED" flexDirection="column" alignItems="center">
         <FontAwesomeIcon
