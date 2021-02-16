@@ -26,6 +26,12 @@ const IndexStyles = styled.div`
   h1 {
     text-align: center;
   }
+
+  #drone-render-1 {
+    @media ${(props) => props.theme.breakpoints.tabletLandscape} {
+      transform: scale(1.5);
+    }
+  }
 `;
 
 const Index = () => {
@@ -65,7 +71,7 @@ const Index = () => {
       </Article>
       <Section>
         <HalfPanel placeItems="center">
-          <Image imgSrc={droneRender1} />
+          <Image imgSrc={droneRender1} id="drone-render-1" />
           <div>
             <H3>What sets us Apart?</H3>
             <ContentP maxWidth="600px">
