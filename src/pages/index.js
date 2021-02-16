@@ -86,20 +86,12 @@ const Index = () => {
               service for those who are not large enough to do business with the
               giants in the space.
             </ContentP>
-          </div>
-        </HalfPanel>
-      </Section>
-      <Section>
-        <HalfPanel placeItems="center">
-          <div>
-            <H3>Open-source drone template</H3>
             <ContentP maxWidth="600px">
               Instead of building warehouses and large centers, we're focused on
               only bringing what is necessary - the drone itself, so that anyone
               can use delivery, even those in the most remote areas.
             </ContentP>
           </div>
-          <Image imgSrc={droneRender2} orderMobile="-1" orderTablet="1" />
         </HalfPanel>
       </Section>
     </IndexStyles>
