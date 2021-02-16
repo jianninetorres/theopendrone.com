@@ -18,7 +18,6 @@ const VideoContainerStyles = styled.div`
 
   @media ${(props) => props.theme.breakpoints.desktop2XL} {
     max-width: ${(props) => props.theme.maxWidths.desktop3XL};
-    margin: 0 auto;
   }
 
   div#video-content-container {
@@ -30,6 +29,10 @@ const VideoContainerStyles = styled.div`
 
     @media ${(props) => props.theme.breakpoints.tabletLandscape} {
       padding-bottom: calc(var(--base-size) * 2);
+    }
+
+    @media ${(props) => props.theme.breakpoints.desktop} {
+      padding-bottom: calc(var(--base-size) * 6);
     }
   }
 
@@ -51,6 +54,18 @@ const VideoContainerStyles = styled.div`
     &:hover {
       transform: scale(1.05);
       transition: transform 0.2s linear;
+    }
+  }
+
+  button {
+    @media ${(props) => props.theme.breakpoints.desktop} {
+      margin-bottom: var(--base-size);
+    }
+  }
+
+  h1 {
+    @media ${(props) => props.theme.breakpoints.desktop} {
+      margin-bottom: calc(var(--base-size) * 4);
     }
   }
 `;
