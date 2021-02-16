@@ -4,7 +4,6 @@ import styled from "styled-components";
 const ContentPStyles = styled.p`
   width: 100%;
   color: ${(props) => props.textColor || props.theme.colors.black};
-  max-width: ${(props) => props.maxWidth || ""};
   font-size: 1rem;
   margin: ${(props) => props.margins || ""};
   margin-top: ${(props) => props.marginTop || ""};
@@ -15,6 +14,10 @@ const ContentPStyles = styled.p`
     font-size: ${(props) => props.fontSize || "1.25rem"};
     margin-bottom: ${(props) =>
       props.marginBottomTabletPortrait || props.theme.spacings.base};
+  }
+
+  @media ${(props) => props.theme.breakpoints.tabletLandscape} {
+    max-width: ${(props) => props.maxWidth || ""};
   }
 `;
 
