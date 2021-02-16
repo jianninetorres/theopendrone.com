@@ -88,7 +88,9 @@ const VideoContainer = ({ videoSrc, videoSrcMobile }) => {
       {!isVideoPlaying ? (
         <div id="video-content-container">
           <PlayButton onClick={playVideo} />
-          <HeaderH1 colour="white">An open-source drone framework</HeaderH1>
+          <HeaderH1 colour="white">
+            An open-source drone delivery service
+          </HeaderH1>
           <Link to="/updates/1">Join the initiative</Link>
         </div>
       ) : (
