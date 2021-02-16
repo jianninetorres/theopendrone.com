@@ -78,7 +78,7 @@ const Index = () => {
               time, but governments have only recently allowed drone systems to
               operate commercially. What sets us apart is that we're building a
               service for those who are not large enough to do business with the
-              giants in the space
+              giants in the space.
             </ContentP>
           </div>
         </HalfPanel>
