@@ -1,9 +1,11 @@
 export default {
   fonts: {
     headers: "Poppins, sans-serif",
-    headersFallbacks: "Montserrat, sans-serif",
+    headersFallbacks:
+      "Montserrat, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, sans-serif",
     main: "Poppins, sans-serif",
-    mainFallbacks: "Open Sans, sans-serif",
+    mainFallbacks:
+      "-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Open Sans, sans-serif",
   },
   colors: {
     black: "#212F3D",
