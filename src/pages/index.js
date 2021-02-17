@@ -13,7 +13,6 @@ import Seo from "../components/structure/Seo";
 import styled from "styled-components";
 
 import droneRender1 from "../assets/images/blended-wing-design-v3-prototype.png";
-import droneRender2 from "../assets/images/drone-render-2a.jpg";
 import MakingOf from "../assets/videos/open-drone-making.mp4";
 import MakingOfMobile from "../assets/videos/open-drone-making-mobile.mp4";
 
