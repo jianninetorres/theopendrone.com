@@ -23,15 +23,15 @@ const PostStyles = styled.div`
 const allPosts = ({ pageContext, data }) => {
   const { currentPage, numPages } = pageContext;
   const homePage = `/`;
-  const isfirstBlogPage = currentPage === 1 ? true : false;
-  const islastBlogPage = currentPage === numPages ? true : false;
+  const isfirstblogpage = currentPage === 1 ? true : false;
+  const islastblogpage = currentPage === numPages ? true : false;
 
   // if the previous page is the home page (0), don't add a route
   const prevPage = currentPage - 1 === 0 ? "" : `/updates/${currentPage - 1}`;
 
   // give nextPage a route if there is a page following the current page
   const nextPage =
-    currentPage !== islastBlogPage ? `/updates/${currentPage + 1}` : "";
+    currentPage !== islastblogpage ? `/updates/${currentPage + 1}` : "";
 
   const posts = data.allMdx.edges;
 
@@ -53,8 +53,8 @@ const allPosts = ({ pageContext, data }) => {
       ))}
       <Pagination
         homePage={homePage}
-        isfirstBlogPage={isfirstBlogPage}
-        islastBlogPage={islastBlogPage}
+        isfirstblogpage={isfirstblogpage}
+        islastblogpage={islastblogpage}
         prevPage={prevPage}
         nextPage={nextPage}
       />
