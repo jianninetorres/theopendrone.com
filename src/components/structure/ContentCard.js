@@ -57,7 +57,7 @@ const ContentCardStyles = styled.article`
 const ContentCard = ({ title, key, date, excerpt, slug, featureImage }) => {
   return (
     <ContentCardStyles key={key}>
-      <img src={featureImage} />
+      <img src={featureImage} alt="" />
       <div className="post-content">
         <ContentP>{date}</ContentP>
         <H3>{title}</H3>

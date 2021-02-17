@@ -70,7 +70,11 @@ const Index = () => {
       </Article>
       <Section>
         <HalfPanel placeItems="center">
-          <Image imgSrc={droneRender1} id="drone-render-1" />
+          <Image
+            imgSrc={droneRender1}
+            id="drone-render-1"
+            alt="Render of drone"
+          />
           <div>
             <H3>What sets us Apart?</H3>
             <ContentP maxWidth="600px">

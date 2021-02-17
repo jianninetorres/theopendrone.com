@@ -30,7 +30,7 @@ const singlePost = ({ data, pageContext }) => {
         image={seoImage}
         description={data.mdx.frontmatter.excerpt}
       />
-      <Image imgSrc={featureImage} />
+      <Image imgSrc={featureImage} alt="" />
       <h1>{data.mdx.frontmatter.title}</h1>
       <h4>{data.mdx.frontmatter.date}</h4>
       <MDXRenderer>{data.mdx.body}</MDXRenderer>

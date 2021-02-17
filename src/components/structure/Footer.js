@@ -108,7 +108,7 @@ const Footer = () => {
         {/* <Link to="/">Documentation</Link> */}
         {/* <Link to="/">Forum</Link> */}
         <div className="logo-container">
-          <img src={logo} className="logo" />
+          <img src={logo} className="logo" alt="OpenDrone logo" />
           <Link
             to="/"
             className="link"

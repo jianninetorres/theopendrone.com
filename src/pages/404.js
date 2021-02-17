@@ -15,7 +15,12 @@ const NotFoundPage = () => {
   return (
     <NotFoundStyles>
       <Section>
-        <h2>Sorry, this page doesn't exist 😓</h2>
+        <h2>
+          Sorry, this page doesn't exist{" "}
+          <span role="img" aria-label="Downcast Face with Sweat">
+            😓
+          </span>
+        </h2>
         <Link to="/">Go back to the home page</Link>
       </Section>
     </NotFoundStyles>
