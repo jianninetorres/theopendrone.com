@@ -27,6 +27,23 @@ const PostStyles = styled.div`
     font-size: calc(var(--base-size) * 1.125);
   }
 
+  div.screenshots-update-container {
+    display: grid;
+    grid-gap: var(--base-size);
+    @media ${(props) => props.theme.breakpoints.tabletPortrait} {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  img.update {
+    width: 100%;
+    height: 100%;
+    @media ${(props) => props.theme.breakpoints.tabletPortrait} {
+      max-width: 300px;
+      max-height: 225px;
+    }
+  }
+
   .post-pagination-container {
     display: flex;
     flex-direction: column;
